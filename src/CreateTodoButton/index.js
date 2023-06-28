@@ -10,6 +10,7 @@ function CreateTodoButton(props) {
     <button
       className="CreateTodoButton"
       onClick={onClickButton}
+      disabled={props.loading}
     >
       +
     </button>

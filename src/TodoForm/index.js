@@ -1,13 +1,11 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
 
-function TodoForm() {
-  const [newTodoValue, setNewTodoValue] = React.useState('');
-  const {
+function TodoForm({
     addTodo,
     setOpenModal,
-  } = React.useContext(TodoContext);
+  }) {
+  const [newTodoValue, setNewTodoValue] = React.useState('');
   
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
@@ -27,7 +25,7 @@ function TodoForm() {
       <textarea
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Cortar la cebolla oara el almuerzo"
+        placeholder="Aprender patrones de render con React.js"
       />
       <div className="TodoForm-buttonContainer">
         <button
