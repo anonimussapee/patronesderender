@@ -11,6 +11,8 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
 import { TodoHeader } from '../TodoHeader';
 import { useTodos } from './useTodos';
+import { ChangeAlert } from '../ChangeAlert';
+// import { WrappedComponentChange } from '../ChangeStorage';
 
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
     searchValue, 
     setSearchValue,
     addTodo,
+    setStateSincronized,
   } = useTodos();
   return (
     <React.Fragment>
@@ -66,22 +69,7 @@ function App() {
           />
         )}
       </TodoList>
-
-      {/* <TodoList>
-        {error && <TodosError />}
-        {loading && <TodosLoading />}
-        {(!loading && !searchedTodos.length) && <EmptyTodos />}
-        
-        {searchedTodos.map(todo => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
-          />
-        ))}
-      </TodoList> */}
+      <ChangeAlert sincronize={setStateSincronized}/>
 
       {!!openModal && (
         <Modal>
