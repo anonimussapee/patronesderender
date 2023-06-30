@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/patronesderender/static/css/main.88455aa0.css",
+    "main.js": "/patronesderender/static/js/main.4a46c73e.js",
+    "index.html": "/patronesderender/index.html",
+    "static/media/delete.svg": "/patronesderender/static/media/delete.331149da222541bc87c25bf8d775a070.svg",
+    "static/media/check.svg": "/patronesderender/static/media/check.fa4fb594b16385306a04b9c87c0feb55.svg",
+    "main.88455aa0.css.map": "/patronesderender/static/css/main.88455aa0.css.map",
+    "main.4a46c73e.js.map": "/patronesderender/static/js/main.4a46c73e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88455aa0.css",
+    "static/js/main.4a46c73e.js"
+  ]
+}
